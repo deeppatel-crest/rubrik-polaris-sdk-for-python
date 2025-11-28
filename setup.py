@@ -56,6 +56,12 @@ setuptools.setup(
     data_files = [
         ('rubrik_polaris/graphql', glob('rubrik_polaris/common/graphql/*'))
     ],
+    package_dir={
+        "rubrik_polaris.graphql": "rubrik_polaris/common/graphql"
+    },
+    package_data={
+        "rubrik_polaris.graphql": ["*.graphql"],
+    },
     tests_require=[
         'pytest'
     ],
