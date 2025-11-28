@@ -30,7 +30,7 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     url='https://github.com/rubrikinc/rubrik-polaris-sdk-for-python',
     keywords='rubrik polaris cdm api',
-    packages=setuptools.find_packages(exclude=['tests']),
+    packages=setuptools.find_packages(exclude=['tests']) + ['rubrik_polaris.graphql'],
     classifiers=[
         'Intended Audience :: Information Technology',
         'Intended Audience :: System Administrators',
